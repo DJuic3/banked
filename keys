@@ -1,0 +1,71 @@
+Starting a Gradle Daemon, 5 busy Daemons could not be reused, use --status for details
+
+> Task :app:signingReport
+Variant: debug
+Config: debug
+Store: C:\Users\dell\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 16:86:9B:4A:E6:E2:55:E2:E9:A9:CC:24:6A:7B:7B:4E
+SHA1: DD:AA:D1:14:D5:29:12:73:9E:27:CB:39:0A:C8:18:88:23:C5:E2:20
+SHA-256: C1:8E:8E:FA:8E:04:0B:4E:4C:E0:CA:9B:6F:81:3B:E8:6B:75:B5:9F:48:82:05:31:FB:20:C6:6E:CB:E5:26:3D
+Valid until: Wednesday, June 26, 2052
+----------
+Variant: release
+Config: debug
+Store: C:\Users\dell\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 16:86:9B:4A:E6:E2:55:E2:E9:A9:CC:24:6A:7B:7B:4E
+SHA1: DD:AA:D1:14:D5:29:12:73:9E:27:CB:39:0A:C8:18:88:23:C5:E2:20
+SHA-256: C1:8E:8E:FA:8E:04:0B:4E:4C:E0:CA:9B:6F:81:3B:E8:6B:75:B5:9F:48:82:05:31:FB:20:C6:6E:CB:E5:26:3D
+Valid until: Wednesday, June 26, 2052
+----------
+Variant: profile
+Config: debug
+Store: C:\Users\dell\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 16:86:9B:4A:E6:E2:55:E2:E9:A9:CC:24:6A:7B:7B:4E
+SHA1: DD:AA:D1:14:D5:29:12:73:9E:27:CB:39:0A:C8:18:88:23:C5:E2:20
+SHA-256: C1:8E:8E:FA:8E:04:0B:4E:4C:E0:CA:9B:6F:81:3B:E8:6B:75:B5:9F:48:82:05:31:FB:20:C6:6E:CB:E5:26:3D
+Valid until: Wednesday, June 26, 2052
+----------
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\dell\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 16:86:9B:4A:E6:E2:55:E2:E9:A9:CC:24:6A:7B:7B:4E
+SHA1: DD:AA:D1:14:D5:29:12:73:9E:27:CB:39:0A:C8:18:88:23:C5:E2:20
+SHA-256: C1:8E:8E:FA:8E:04:0B:4E:4C:E0:CA:9B:6F:81:3B:E8:6B:75:B5:9F:48:82:05:31:FB:20:C6:6E:CB:E5:26:3D
+Valid until: Wednesday, June 26, 2052
+----------
+
+> Task :firebase_auth:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\dell\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 16:86:9B:4A:E6:E2:55:E2:E9:A9:CC:24:6A:7B:7B:4E
+SHA1: DD:AA:D1:14:D5:29:12:73:9E:27:CB:39:0A:C8:18:88:23:C5:E2:20
+SHA-256: C1:8E:8E:FA:8E:04:0B:4E:4C:E0:CA:9B:6F:81:3B:E8:6B:75:B5:9F:48:82:05:31:FB:20:C6:6E:CB:E5:26:3D
+Valid until: Wednesday, June 26, 2052
+----------
+
+> Task :firebase_core:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\dell\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 16:86:9B:4A:E6:E2:55:E2:E9:A9:CC:24:6A:7B:7B:4E
+SHA1: DD:AA:D1:14:D5:29:12:73:9E:27:CB:39:0A:C8:18:88:23:C5:E2:20
+SHA-256: C1:8E:8E:FA:8E:04:0B:4E:4C:E0:CA:9B:6F:81:3B:E8:6B:75:B5:9F:48:82:05:31:FB:20:C6:6E:CB:E5:26:3D
+Valid until: Wednesday, June 26, 2052
+----------
+
+> Task :google_sign_in_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\dell\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 16:86:9B:4A:E6:E2:55:E2:E9:A9:CC:24:6A:7B:7B:4E
+SHA1: DD:AA:D1:14:D5:29:12:73:9E:27:CB:39:0A:C8:18:88:23:C5:E2:20
+SHA-256: C1:8E:8E:FA:8E:04:0B:4E:4C:E0:CA:9B:6F:81:3B:E8:6B:75:B5:9F:48:82:05:31:FB:20:C6:6E:CB:E5:26:3D
+Valid until: Wednesday, June 26, 2052

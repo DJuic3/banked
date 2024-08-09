@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "739611103226",
+    "firebase_url": "https://banker-dc808-default-rtdb.firebaseio.com",
+    "project_id": "banker-dc808",
+    "storage_bucket": "banker-dc808.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739611103226:android:335b4b736a370018185e43",
+        "android_client_info": {
+          "package_name": "com.example.bankedzw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739611103226-d68idgs880t9gia68m79t2h83bm5kpbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bankedzw",
+            "certificate_hash": "ddaad114d52912739e27cb390ac8188823c5e220"
+          }
+        },
+        {
+          "client_id": "739611103226-00cfsaqe9gpo0v0v43e7qh8u7g53auo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjA_nromfPAmlosJdrzUht_i9rHuKpGoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739611103226-00cfsaqe9gpo0v0v43e7qh8u7g53auo9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "739611103226-scmgpppev9alq728bkgmposv0td90p0b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bankedzw"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

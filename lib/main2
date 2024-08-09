@@ -1,0 +1,113 @@
+// import 'package:bankedzw/auth/googlelogin.dart';
+// import 'package:bankedzw/homescreen/homescreen.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:flutter/material.dart';
+// import 'package:flutter_spinkit/flutter_spinkit.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
+//
+//
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp(
+//     options: const FirebaseOptions(
+//       apiKey: "AIzaSyDjA_nromfPAmlosJdrzUht_i9rHuKpGoM",
+//       appId: "1:739611103226:android:335b4b736a370018185e43",
+//       storageBucket: "banker-dc808.appspot.com",
+//       messagingSenderId: "messagingSenderId",
+//       projectId: "banker-dc808",
+//     ),
+//   );
+//
+//   runApp(const MyApp(),
+//   );
+// }
+//
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//         useMaterial3: true,
+//       ),
+//       home: const DeviceCheck(),
+//       routes: {
+//         '/login': (context) =>  LoginDialog(onDismiss: onDismiss, onLogin: onLogin),
+//         '/dashboard': (context) => DashboardPage(),
+//
+//       },
+//     );
+//   }
+// }
+//
+// class DeviceCheck extends StatelessWidget {
+//   const DeviceCheck({Key? key}) : super(key: key);
+//
+//   bool isTablet(BuildContext context) {
+//     var shortestSide = MediaQuery.of(context).size.shortestSide;
+//     return shortestSide >= 600;
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     bool isTabletDevice = isTablet(context);
+//
+//     // Store the device type in SharedPreferences
+//     SharedPreferences.getInstance().then((prefs) {
+//       prefs.setBool('isTablet', isTabletDevice);
+//     });
+//
+//
+//     print(isTabletDevice ? 'Running on Tablet' : 'Running on Mobile');
+//
+//     return AuthCheck();
+//   }
+// }
+//
+// class AuthCheck extends StatelessWidget {
+//   const AuthCheck({Key? key}) : super(key: key);
+//   final bool isAdmin = false;
+//
+//
+//
+//   Future<Map<String, dynamic>> _checkAuthAndAdminStatus() async {
+//     SharedPreferences prefs = await SharedPreferences.getInstance();
+//     User? user = FirebaseAuth.instance.currentUser;
+//     bool isLoggedIn = user != null || prefs.getString('token') != null;
+//     bool isAdmin = prefs.getBool('isAdmin') ?? false;
+//
+//     return {
+//       'isLoggedIn': isLoggedIn,
+//       'isAdmin': isAdmin,
+//     };
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return FutureBuilder<Map<String, dynamic>>(
+//       future: _checkAuthAndAdminStatus(),
+//       builder: (context, snapshot) {
+//         if (snapshot.connectionState == ConnectionState.waiting) {
+//           return const Scaffold(
+//             body: Center(
+//               child: SpinKitThreeBounce(
+//                 color: Colors.deepPurpleAccent,
+//                 size: 10.0,
+//               ),
+//             ),
+//           );
+//         } else {
+//           if (snapshot.data?['isLoggedIn'] ?? false) {
+//             return DashboardPage(isAdmin: snapshot.data?['isAdmin'] ?? false);
+//           } else {
+//             return  LoginDialog(onDismiss: onDismiss, onLogin: onLogin);
+//           }
+//         }
+//       },
+//     );
+//   }
+// }
